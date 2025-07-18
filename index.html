@@ -1,93 +1,75 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Whatsapp Business</title>
+  <meta charset="UTF-8">
+  <title>Wait 10 seconds...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- OG thumbnail -->
-  <meta property="og:title" content="Whatsapp" />
-  <meta property="og:image" content="https://i.imgur.com/LhPp2RN.jpeg" />
-  <meta property="og:description" content="Click here to continue to WhatsApp 💚💚" />
-  <meta name="theme-color" content="#25D366" />
+  <!-- OG Thumbnail -->
+  <meta property="og:image" content="https://i.imgur.com/DUOSvYx.jpeg" />
+  <meta name="description" content="Tunggu sebentar, kejutan panas sedang dimuat... 💦"/>
 
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #e5ddd5;
-      font-family: sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
       text-align: center;
     }
 
-    .container {
+    img {
+      width: 100%;
+      max-width: 400px;
       margin-top: 30px;
+      border-radius: 20px;
     }
 
-    .thumbnail {
-      width: 300px;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    #message {
+      font-size: 24px;
+      margin-top: 20px;
     }
 
-    .title {
-      font-size: 20px;
-      margin: 20px 0;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 14px 24px;
-      font-size: 18px;
-      font-weight: bold;
-      background-color: #25D366;
+    #continueBtn {
+      display: none;
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 24px;
+      background-color: #ff0066;
       color: white;
       border: none;
       border-radius: 12px;
-      cursor: pointer;
-      animation: shake 1.5s infinite;
-      text-decoration: none;
+      animation: fastPulse 0.5s infinite;
     }
 
-    .btn:hover {
-      background-color: #128C7E;
-    }
-
-    @keyframes shake {
-      0% { transform: translateX(0); }
-      25% { transform: translateX(-5px); }
-      50% { transform: translateX(5px); }
-      75% { transform: translateX(-5px); }
-      100% { transform: translateX(0); }
-    }
-
-    .ads {
-      margin-top: 30px;
+    @keyframes fastPulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <img class="thumbnail" src="https://i.imgur.com/NW2v6wh.jpeg" alt="Video Call Thumbnail" />
-    <h1 class="title">CONTINUE WHATSAPP</h1>
+  <h1>Hi, I'm Amelia 💋</h1>
+  <img src="https://i.imgur.com/DUOSvYx.jpeg" alt="Amelia">
+  <div id="message">Tunggu 10 detik ya sayang...</div>
 
-    <!-- Tombol Direct -->
-    <a class="btn" href="https://www.profitableratecpm.com/vgx77gqskg?key=6e980c246cebf6a0c0055c87de205995" target="_blank">📞 Call Now</a>
+  <button id="continueBtn" onclick="goToBlog()">Continue</button>
 
-    <!-- Tombol Direct (dulu popunder) -->
-    <a class="btn" href="https://www.profitableratecpm.com/vgx77gqskg?key=6e980c246cebf6a0c0055c87de205995" target="_blank">💬 Send Message</a>
+  <!-- Popunder Script -->
+  <script type='text/javascript' src='//profitableratecpm.com/44/20/59/4420592e6a2285f083367a6fc1fca614.js'></script>
 
-    <!-- Native Banner -->
-    <div class="ads">
-      <script async="async" data-cfasync="false" src="//pl27079921.profitableratecpm.com/7e63f56aba5db2dffb4773369cf25bb3/invoke.js"></script>
-      <div id="container-7e63f56aba5db2dffb4773369cf25bb3"></div>
-    </div>
-  </div>
+  <script>
+    setTimeout(() => {
+      document.getElementById('message').textContent = "Klik tombol di bawah ini...";
+      document.getElementById('continueBtn').style.display = "inline-block";
+    }, 10000);
 
+    function goToBlog() {
+      window.location.href = "http://tipssuksesusiamuda19.blogspot.com";
+    }
+  </script>
 </body>
 </html>
