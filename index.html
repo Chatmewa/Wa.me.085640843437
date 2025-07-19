@@ -1,74 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>Wait 10 seconds...</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- OG Thumbnail -->
-  <meta property="og:image" content="https://i.imgur.com/DUOSvYx.jpeg" />
-  <meta name="description" content="Tunggu sebentar, kejutan panas sedang dimuat... 💦"/>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Hi I'm Amelia </title>
+  <meta name="description" content="Klik continue untuk melanjutkan..." />
+  <meta property="og:image" content="https://i.imgur.com/4XZ09QB.jpeg">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: black;
-      color: white;
+      background: #000;
+      color: #fff;
       font-family: Arial, sans-serif;
       text-align: center;
     }
-
+    .container {
+      margin-top: 30px;
+    }
     img {
-      width: 100%;
-      max-width: 400px;
-      margin-top: 30px;
-      border-radius: 20px;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
     }
-
-    #message {
-      font-size: 24px;
-      margin-top: 20px;
-    }
-
-    #continueBtn {
-      display: none;
-      margin-top: 30px;
+    .btn {
+      margin-top: 25px;
       padding: 15px 30px;
-      font-size: 24px;
-      background-color: #ff0066;
+      background: #ff0055;
       color: white;
+      font-size: 20px;
       border: none;
       border-radius: 12px;
-      animation: fastPulse 0.5s infinite;
+      cursor: pointer;
+      animation: shake 0.3s infinite;
     }
 
-    @keyframes fastPulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(1); }
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      25% { transform: translate(-1px, -2px) rotate(-1deg); }
+      50% { transform: translate(-3px, 0px) rotate(1deg); }
+      75% { transform: translate(3px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -1px) rotate(1deg); }
     }
   </style>
 </head>
 <body>
-
-  <h1>Hi, I'm Amelia 💋</h1>
-  <img src="https://i.imgur.com/DUOSvYx.jpeg" alt="Amelia">
-  <div id="message">Tunggu 10 detik ya sayang...</div>
-
-  <button id="continueBtn" onclick="goToBlog()">Continue</button>
-
-  <!-- Popunder Script -->
-  <script type='text/javascript' src='//profitableratecpm.com/44/20/59/4420592e6a2285f083367a6fc1fca614.js'></script>
+  <div class="container">
+    <img src="https://i.imgur.com/4XZ09QB.jpeg" alt="Thumbnail">
+    <br />
+    <button class="btn" onclick="openPopAndRedirect()">Continue</button>
+  </div>
 
   <script>
-    setTimeout(() => {
-      document.getElementById('message').textContent = "Klik tombol di bawah ini...";
-      document.getElementById('continueBtn').style.display = "inline-block";
-    }, 10000);
+    function openPopAndRedirect() {
+      window.open("https://www.profitableratecpm.com/w07pgcnf2u?key=ce7b87200e952cabd1fe5cf2e0f8428b", "_blank");
 
-    function goToBlog() {
-      window.location.href = "http://tipssuksesusiamuda19.blogspot.com";
+      setTimeout(function() {
+        window.location.href = "http://tipssuksesusiamuda19.blogspot.com";
+      }, 2000);
     }
   </script>
 </body>
