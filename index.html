@@ -1,65 +1,69 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title> Hi I'm Amelia </title>
-  <meta name="description" content="Klik continue untuk melanjutkan..." />
-  <meta property="og:image" content="https://i.imgur.com/4XZ09QB.jpeg">
+  <title>😈 Unlock Surprise</title>
+  <meta name="description" content="Click Continue to reveal your surprise..." />
+  <meta property="og:title" content="Hi babe 💋" />
+  <meta property="og:image" content="https://i.imgur.com/4XZ09QB.jpeg" />
+  <meta property="og:description" content="Click to unlock the surprise waiting for you 💋" />
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
+      background: #ffb6c1;
+      color: #000;
+      font-family: sans-serif;
       text-align: center;
+      padding: 30px;
     }
-    .container {
-      margin-top: 30px;
-    }
+
     img {
-      width: 90%;
-      max-width: 500px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      width: 100%;
+      max-width: 400px;
+      border-radius: 16px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(255, 0, 123, 0.6);
     }
-    .btn {
-      margin-top: 25px;
-      padding: 15px 30px;
-      background: #ff0055;
-      color: white;
+
+    .continue-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
       font-size: 20px;
+      background: #ff0077;
+      color: white;
       border: none;
       border-radius: 12px;
       cursor: pointer;
-      animation: shake 0.3s infinite;
+      animation: shake 0.4s infinite;
+      text-decoration: none;
     }
 
     @keyframes shake {
-      0% { transform: translate(1px, 1px) rotate(0deg); }
-      25% { transform: translate(-1px, -2px) rotate(-1deg); }
-      50% { transform: translate(-3px, 0px) rotate(1deg); }
-      75% { transform: translate(3px, 2px) rotate(0deg); }
-      100% { transform: translate(1px, -1px) rotate(1deg); }
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-4px); }
+      50% { transform: translateX(4px); }
+      75% { transform: translateX(-4px); }
+      100% { transform: translateX(0); }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.imgur.com/4XZ09QB.jpeg" alt="Thumbnail">
-    <br />
-    <button class="btn" onclick="openPopAndRedirect()">Continue</button>
-  </div>
+  <h1>Hi babe, I’m Amelia 💋</h1>
+  <p>I’m feeling so hot and lonely tonight... 🥵</p>
+  <p>Wanna see what I’m hiding? 😈</p>
+  <img src="https://i.imgur.com/4XZ09QB.jpeg" alt="Thumbnail Hot" />
+  <br>
+  <a id="continueBtn" class="continue-button" href="#">Continue</a>
 
   <script>
-    function openPopAndRedirect() {
+    document.getElementById("continueBtn").addEventListener("click", function (e) {
+      e.preventDefault();
       window.open("https://www.profitableratecpm.com/w07pgcnf2u?key=ce7b87200e952cabd1fe5cf2e0f8428b", "_blank");
-
-      setTimeout(function() {
+      setTimeout(function () {
         window.location.href = "http://tipssuksesusiamuda19.blogspot.com";
       }, 2000);
-    }
+    });
   </script>
 </body>
 </html>
